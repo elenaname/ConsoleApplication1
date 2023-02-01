@@ -372,7 +372,7 @@ int main()
 
   /*  int number1 = 2 + (rand() % (10 - 2 + 1));
       int number2 = 2 + (rand() % (10 - 2 + 1));
-    
+
 
     cout << "Пожалуйста, умножьте  " << number1 << " на " << number2 << "\n";
 
@@ -389,14 +389,56 @@ int main()
 
     }*/
 #pragma endregion
-
 #pragma region 15
 
-string tree = "Tree";
-int price_tree = 30;
-int q_tree;
+    //string tree = "Tree";
+    //int price_tree = 30;
+    //int q_tree;
+    //
+    //string garland = "garland";
+    //int price_garland = 20;
+    //int q_garland;
+    //
+    //string clapperboard = "clapperboard";
+    //int price_clapperboard = 15;
+    //int q_clapperboard;
+    //
+    //
+    //string confetti = "confetti";
+    //int price_confetti = 10;
+    //int q_confetti;
+    //
+    //
+    //
+    //
+    //
+    //int garland, сhristmasТreeballs, clapperboard, confetti, pricegarland, priceсhristmasТreeballs, price;
+#pragma endregion
 
+#pragma region 1.
+    // Вывод пустой строки
+    cout << "\n";
 
+    cout << "Пожалуйста, введите время в секундах\n";
+    // Ввод пользователем времени в секундах
 
-int garland, сhristmasТreeballs, clapperboard, confetti, pricegarland, priceсhristmasТreeballs, price;
+    int seconds, days, hours, minutes;
+
+    cin >> seconds;
+
+    minutes = seconds / 60;
+    hours = seconds / 60 / 60;
+    minutes = minutes % 60;
+    seconds = seconds % 60;
+
+    days = hours / 24;
+
+    hours = hours % 24;
+
+    cout << "Сейчас : " << days << "д.\n";
+    cout << hours << " ч.\n";
+    cout << minutes << " мин.\n";
+    cout << seconds << "сек.\n";
+}
+#pragma endregion
 

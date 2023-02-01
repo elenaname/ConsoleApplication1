@@ -416,18 +416,66 @@ int main()
 #pragma endregion
 
 #pragma region 1.
+//    // Вывод пустой строки
+//    cout << "\n";
+//
+//    cout << "Пожалуйста, введите время в секундах\n";
+//    // Ввод пользователем времени в секундах
+//
+//    int seconds, days, hours, minutes;
+//
+//    cin >> seconds;
+//
+//    minutes = seconds / 60;
+//    hours = seconds / 60 / 60;
+//    minutes = minutes % 60;
+//    seconds = seconds % 60;
+//
+//    days = hours / 24;
+//
+//    hours = hours % 24;
+//
+//    cout << "Сейчас : " << days << "д.\n";
+//    cout << hours << " ч.\n";
+//    cout << minutes << " мин.\n";
+//    cout << seconds << "сек.\n";
+//}
+#pragma endregion
+#pragma region 1.
     // Вывод пустой строки
     cout << "\n";
 
     cout << "Пожалуйста, введите время в секундах\n";
-    // Ввод пользователем времени в секундах
+// Ввод пользователем времени в секундах
 
-    int seconds, days, hours, minutes;
+    cout << "Выберите во что Вы хотите их перевести : \n";
+    cout << "Если в минуты введите 1 \n";
+    cout << "Если в часы введите 2 \n";
+    cout << "Если в дни введите 3 \n";
 
+    int vibor, seconds, days, hours, minutes;
+    cin >> vibor;
     cin >> seconds;
+    if (vibor == 1) {
+
+     }
 
     minutes = seconds / 60;
-    hours = seconds / 60 / 60;
+    seconds = seconds % 60;
+
+    cout << seconds << "равно : " << minutes << "минут";
+    }
+    else (minutes % 10 == 1){
+        cout << seconds << "равно : " << minutes << "минутa";
+    }
+
+
+
+   //if (day % 10 == 5) || day %10 == 6 ||) {
+
+   // }
+
+   /* hours = seconds / 60 / 60;
     minutes = minutes % 60;
     seconds = seconds % 60;
 
@@ -435,10 +483,10 @@ int main()
 
     hours = hours % 24;
 
-    cout << "Сейчас : " << days << "д.\n";
-    cout << hours << " ч.\n";
-    cout << minutes << " мин.\n";
-    cout << seconds << "сек.\n";
+cout << "Сейчас : " << days << "д.\n";
+cout << hours << " ч.\n";
+cout << minutes << " мин.\n";
+cout << seconds << "сек.\n";*/
 }
 #pragma endregion
 

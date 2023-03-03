@@ -134,26 +134,143 @@
 //  
 //}
 #pragma endregion
-//// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-//// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
-//
-//// Советы по началу работы 
-////   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-////   2. В окне Team Explorer можно подключиться к системе управления версиями.
-////   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.
 
-#include <iomanip>;
+
+#include <iomanip>
 #include <iostream>
-
+#include <vector>
 
 using namespace std;
 
+
+#pragma region 24
+
+//int findMax(vector<int> f)
+//{
+//    int max, temp;
+//    for (int i = 0; i < f.size(); i++)
+//    {
+//    for (int j = 0; j < f.size(); j++)
+//    {
+//    if (f[i] > f[j])
+//    {
+//    temp = f[i];
+//    f[i] = f[j];
+//    f[j] = temp;
+//    }
+//   }
+//}
+//    max = f[0];
+//     return max;
+//    }
+////int findMin(vector<int> f) 
+////{
+////    int min, temp;
+////    for (int i = 0; i < f.size(); i++)
+////    {
+////        for (int j = 0; j < f.size(); j++)
+////        {
+////            if (f[i] < f[j])
+////            {
+////                temp = f[i];
+////                f[i] = f[j];
+////                f[j] = temp;
+////            }
+////        }
+////    }
+////    return min;
+////}
+//
+//int findMin2(vector<int> f)
+//{
+//    int min2;
+//    min2 = INT_MAX;
+//    for (int i = 0; i < f.size(); i++)
+//    {
+//        if (min2 > f.size())
+//        {
+//            min2 = f[i];
+//        }
+//
+//    }
+//    return min2;
+//}
+#pragma endregion
+
+#pragma region 25
+//int findPrime(vector<int> f)
+//    {
+//        int k = 0;
+//
+//        for (int i = 0; i < f.size(); i++)
+//        {
+//                      
+//                if ((f[i] % 2 == 1 && f[i] % 3 == 1) || (f[i] % 2 == 1 && f[i] % 3 == 2))
+//                {
+//                    cout << " " << f[i]<< endl;
+//                    k++;
+//                }
+//
+//            
+//        }
+//
+//        return k;
+//    }
+//int main()
+//{
+//    setlocale(LC_ALL, "ru");
+//    srand(time(NULL));
+//
+//    vector<int> f{ 1, 2, 3, 5, 7, 13, 61, 73 };
+//    cout << findPrime(f);
+//
+//}
+#pragma endregion
+//int main()
+//{
+//    setlocale(LC_ALL, "ru");
+//    srand(time(NULL));
+
+    
+    //int max = findMax(f);//максимальное значение массива
+    //cout << max << endl;
+
+    //int min2 = findMin2(f);//максимальное значение массива
+    //cout << min2 << endl;
+#pragma endregion
+
+#pragma region 26
+int findPrime(vector<int> f)
+{
+    int k = 0;
+
+    for (int i = 0; i < f.size(); i++)
+    {
+
+        if (f[i] % 2 == 0)
+        {
+            cout << " " << f[i] << endl;
+            k++;
+        }
+
+
+    }
+
+    return k;
+}
 int main()
 {
     setlocale(LC_ALL, "ru");
+    srand(time(NULL));
+
+    vector<int> f{ 1, 2, 3, 4, 5, 7, 62, 13, 61, 73 };
+    cout << findPrime(f);
+
+}
+#pragma endregion
+  
+
+ 
 #pragma region 5
     ////Вывод пустой строки 
     //cout << "\n";
@@ -202,7 +319,18 @@ int main()
 
     //}
 #pragma endregion
-
+           //for (int i = 0; i < size; i++)
+           //    {
+           //        for (int j = 0; j < size; j++)
+           //        {
+           //            if (values[i] > values[j])
+           //            {
+           //                temp = values[i];
+           //                values[i] = values[j];
+           //                values[j] = temp;
+           //            }
+           //        }
+           //    }
 #pragma region 6
 
 
@@ -441,52 +569,142 @@ int main()
 //    cout << seconds << "сек.\n";
 //}
 #pragma endregion
-#pragma region 1.
-    // Вывод пустой строки
-    cout << "\n";
+#pragma region 2.
+    //int vibor, seconds, days, hours, minutes;
 
-    cout << "Пожалуйста, введите время в секундах\n";
-// Ввод пользователем времени в секундах
+    //cout << "Пожалуйста, введите время в секундах\n";
+    //// Ввод пользователем времени в секундах
+    //cin >> seconds;
 
-    cout << "Выберите во что Вы хотите их перевести : \n";
-    cout << "Если в минуты введите 1 \n";
-    cout << "Если в часы введите 2 \n";
-    cout << "Если в дни введите 3 \n";
+    //cout << "Выберите во что Вы хотите их перевести : \n";
+    //cout << "Если в минуты введите 1 \n";
+    //cout << "Если в часы введите 2 \n";
+    //cout << "Если в дни введите 3 \n";
 
-    int vibor, seconds, days, hours, minutes;
-    cin >> vibor;
-    cin >> seconds;
-    if (vibor == 1) {
+    //cout << "\n";
 
-     }
+    //cin >> vibor;
 
-    minutes = seconds / 60;
-    seconds = seconds % 60;
+    //if (vibor == 1) {
 
-    cout << seconds << "равно : " << minutes << "минут";
-    }
-    else (minutes % 10 == 1){
-        cout << seconds << "равно : " << minutes << "минутa";
-    }
+    //    minutes = seconds / 60;
 
+    //    if (minutes % 10 == 1) {
+    //        cout << seconds << "равно : " << minutes << "минутa";
+    //    }
+    //    else if (minutes % 10 == 2 || minutes % 10 == 3 || minutes % 10 == 4)
+    //    {
 
+    //        cout << seconds << "равно : " << minutes << "минуты";
+    //    }
+    //    else if (minutes % 10 == 5 || minutes % 10 == 6 || minutes % 10 == 7 || minutes % 10 == 8 || minutes % 10 == 9)
+    //    {
 
-   //if (day % 10 == 5) || day %10 == 6 ||) {
+    //        cout << seconds << "равно : " << minutes << "минут";
+    //    }
 
-   // }
+    //}
+    //else if (vibor == 2) {
 
-   /* hours = seconds / 60 / 60;
-    minutes = minutes % 60;
-    seconds = seconds % 60;
+    //    hours = seconds / 3600;
 
-    days = hours / 24;
+    //    if (hours % 10 == 1) {
 
-    hours = hours % 24;
+    //        cout << seconds << "равно : " << hours << "час";
+    //    }
+    //    else if (hours % 10 == 2 || hours % 10 == 3 || hours % 10 == 4)
+    //    {
+    //        cout << seconds << "равно : " << hours << "часа";
+    //    }
+    //    else if (hours % 10 == 0 || hours % 10 == 5 || hours % 10 == 6 || hours % 10 == 7 || hours % 10 == 8 || hours % 10 == 9)
+    //    {
+    //        cout << seconds << "равно : " << hours << "часов";
+    //    }
+    //}
+    //else if (vibor == 3) {
 
-cout << "Сейчас : " << days << "д.\n";
-cout << hours << " ч.\n";
-cout << minutes << " мин.\n";
-cout << seconds << "сек.\n";*/
-}
+    //        days = seconds / 3600 / 24;
+
+    //        if (days % 10 == 1)
+    //        {
+    //            cout << seconds << "равно : " << days << "день";
+    //        }
+    //        else if (days % 10 == 2 || days % 10 == 3 || days % 10 == 4)
+    //        {
+    //            cout << seconds << "равно : " << days << "дня";
+    //        }
+    //        else if (days % 10 == 5 || days % 10 == 6 || days % 10 == 7 || days % 10 == 8 || days % 10 == 9 || days % 10 == 0)
+    //        {
+    //            cout << seconds << "равно : " << days << "дней";
+    //        }
+
+    //}
+#pragma endregion
+#pragma region 3.
+
+//    int ans, max, min, temp;
+//
+//    // Предлагаем пользователю сделать выбор - вводить числа с клавиатуры или рандомные числа
+//    cout << "Пожалуйста, выберите 1, если хотите ввести число с клавиатуры \n";
+//    cout << "Пожалуста, выберите 2, если хотите что бы компьютер предложил случайные цифры \n";
+//    cin >> ans;
+//
+//    // Объявление массивов
+//    const size_t size = 5;
+//    int values[size];
+//
+//    if (ans == 1)
+//    {
+//        //Ввод массива 
+//        for (int i = 0; i < size; i++)
+//        {
+//            cin >> values[i];
+//        }
+//    }
+//    else if (ans == 2)
+//    {
+//        for (int i = 0; i < size; i++)
+//        {
+//            values[i] = rand() % 100;
+//        }
+//
+//    }
+//    //Вывод массива
+//    for (int i = 0; i < size; i++)
+//    {
+//        cout << values[i] << " ";
+//    }
+//
+//    // - по возрастанию
+//    for (int i = 0; i < size; i++)
+//    {
+//        for (int j = 0; j < size; j++)
+//        {
+//            if (values[i] > values[j])
+//            {
+//                temp = values[i];
+//                values[i] = values[j];
+//                values[j] = temp;
+//            }
+//        }
+//    }
+//    cout << "\t максимальное : " << values[0] << endl;
+//
+//    // - по убыванию
+//    for (int i = 0; i < size; i++)
+//    {
+//        for (int j = 0; j < size; j++)
+//        {
+//            if (values[i] < values[j])
+//            {
+//                temp = values[i];
+//                values[i] = values[j];
+//                values[j] = temp;
+//            }
+//        }
+//    }
+//    cout << "\t минимальное : " << values[0] << endl;
+//}
+     
 #pragma endregion
 
